@@ -26,11 +26,11 @@ in {
     mtdutils
     i2c-tools
     minicom
-    mesa-demos
+    #mesa-demos
   ];
 
   # opengl
-  hardware.graphics.enable = true;
+  hardware.opengl.enable = true;
 
   # hyprland
   programs.hyprland.enable = true;
@@ -54,8 +54,8 @@ in {
     inherit hashedPassword;
     isNormalUser = true;
     home = "/home/${username}";
-    extraGroups = ["users" "wheel"];
+    extraGroups = ["users" "wheel" "video"];
   };
 
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.11";
 }

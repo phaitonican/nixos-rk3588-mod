@@ -14,6 +14,7 @@ in {
 
   boot = {
     kernelPackages = pkgsKernel.linuxPackagesFor (pkgsKernel.callPackage ../../pkgs/kernel/vendor.nix {});
+    #kernelPackages = pkgs.linuxPackages_6_11;
 
     # kernelParams copy from Armbian's /boot/armbianEnv.txt & /boot/boot.cmd
     kernelParams = [

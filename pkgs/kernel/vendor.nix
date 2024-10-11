@@ -19,12 +19,12 @@
   extraMeta.branch = "6.1";
 
   # https://github.com/orangepi-xunlong/linux-orangepi/tree/orange-pi-6.1-rk35xx
-  src = fetchFromGitHub {
-    owner = "armbian";
-    repo = "linux-rockchip";
-    rev = "cbd34d087b45fa88e23974f9d821ca474ca11571";
-    hash = "sha256-Hw3P0sttEAYgZ+vgJ63nhHcXt2FFusU3vm/A6vSl7x8=";
-  };
+    src = fetchFromGitHub {
+        owner = "armbian";
+        repo = "linux-rockchip";
+        rev = "6dfe401b287bdf15675c9c180c843da028c34d08";
+        hash = "sha256-fymiFH5ajBcXc6c5J9AMHl0TMM0E9IJu8GxoEYj7gN8=";
+    };
 
 
 
