@@ -26,7 +26,14 @@ in {
     mtdutils
     i2c-tools
     minicom
+    mesa-demos
   ];
+
+  # opengl
+  hardware.graphics.enable = true;
+
+  # hyprland
+  programs.hyprland.enable = true;
 
   # Enable the OpenSSH daemon.
   services.openssh = {

@@ -14,16 +14,16 @@
   ...
 }:
 (linuxManualConfig rec {
-  modDirVersion = "6.1.43";
-  version = "${modDirVersion}-xunlong-rk3588";
+  modDirVersion = "6.1.75";
+  version = "${modDirVersion}-rockchip-rk3588";
   extraMeta.branch = "6.1";
 
   # https://github.com/orangepi-xunlong/linux-orangepi/tree/orange-pi-6.1-rk35xx
   src = fetchFromGitHub {
-    owner = "orangepi-xunlong";
-    repo = "linux-orangepi";
-    rev = "752c0d0a12fdce201da45852287b48382caa8c0f";
-    hash = "sha256-tVu/3SF/+s+Z6ytKvuY+ZwqsXUlm40yOZ/O5kfNfUYc=";
+    owner = "armbian";
+    repo = "linux-rockchip";
+    rev = "cbd34d087b45fa88e23974f9d821ca474ca11571";
+    hash = "sha256-Hw3P0sttEAYgZ+vgJ63nhHcXt2FFusU3vm/A6vSl7x8=";
   };
 
 
